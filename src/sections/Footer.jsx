@@ -2,7 +2,7 @@ import { footer } from "../constants";
 import logo from "/images/logo.svg";
 const Footer = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10 mt-[200px] lg:mt-0">
       <div className="flex items-center lg:items-start flex-col gap-y-5 col-span-2 flex-grow">
         <div className="flex items-center gap-2">
           <img src={logo} />
