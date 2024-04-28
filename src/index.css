@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+p {
+  color: #4f5665;
+}
+
+@layer components {
+  .max-container {
+    @apply w-[1440px] mx-auto;
+  }
+
+  .sample {
+    @apply text-red-800 bg-slate-500;
+  }
+
+  .nav-text {
+    @apply text-[#4F5665] text-[1rem];
+  }
+
+  .header-hero {
+    @apply font-semibold tracking-wide text-lg sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .sub-header-hero {
+    @apply text-[#4F5665] leading-relaxed lg:leading-loose tracking-normal text-xs sm:text-base md:text-lg lg:text-base;
+  }
+
+  .feature-header {
+    @apply font-semibold tracking-wide sm:text-left text-lg sm:text-2xl md:text-3xl lg:text-3xl;
+  }
+
+  .feature-sub-header {
+    @apply text-[#4F5665] text-justify leading-relaxed lg:leading-loose tracking-normal text-xs sm:text-base md:text-lg lg:text-base;
+  }
+
+  .header {
+    @apply tracking-wide text-xl font-bold sm:text-xl md:text-2xl lg:text-2xl w-[75%] sm:w-[50%] md:w-[40%] lg:w-[30%] mx-auto mb-4;
+  }
+
+  .sub-header {
+    @apply leading-relaxed tracking-wide text-sm sm:text-base w-[75%] sm:w-[50%] md:w-[55%] mx-auto;
+  }
+}
